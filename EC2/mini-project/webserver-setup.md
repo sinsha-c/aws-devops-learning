@@ -12,7 +12,11 @@ The setup includes both:
 - Automated deployment using **EC2 User Data (Bash script)**
 
 ---
+## 🏗️ Architecture Diagram
 
+![Architecture Diagram](docs/architecture.png)
+
+---
 ## 🎯 Objectives
 - Launch EC2 instances using different Linux AMIs
 - Install and configure Nginx web server
