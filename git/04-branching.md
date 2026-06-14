@@ -2,18 +2,14 @@
 
 
 Create branch:
-
+```bash
 git checkout -b feature-login
-
-add file on feature
-
 
 Check branches:
 
-git branch
+add file and commit:
 
-commit:
-
+```bash
 git add .
 
 git commit -m "added feature login"
