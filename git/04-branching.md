@@ -4,7 +4,7 @@
 Create branch:
 ```bash
 git checkout -b feature-login
-
+```
 Check branches:
 
 add file and commit:
@@ -13,7 +13,7 @@ add file and commit:
 git add .
 
 git commit -m "added feature login"
-
+```
 Screenshot:
 
 ![Branch](screenshots/branch-created.png)
