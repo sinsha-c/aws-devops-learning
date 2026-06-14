@@ -12,50 +12,55 @@ Different developers work on different features using Git branches. Your task is
 
 - Go to the terminal where the git is configured already.  
 ```bash
-- git clone \<repourl\>  
-- Cd \<reponame\>  
--  nano student\_portal.html  
-- \<h1\>student portal\</h1\>  
-- git add .  
-- git commit \-m “studentportal”  
-- git push origin main
+git clone \<repourl\>  
+cd \<reponame\>  
+nano student\_portal.html  
+\<h1\>student portal\</h1\>  
+git add .  
+git commit \-m “studentportal”  
+git push origin main
 ```
 OR 
 
 Go to the terminal, create a new directory and initialize Git. 
-
-- Mkdir devops-experiment  
-- git init   
-- nano student\_portal.html  
-- \<h1\>student portal\</h1\>  
-- git add .  
-- git commit \-m “studentportal”  
-- git remote add origin URL (copy the github repo url from github which already created above)  
-- git push origin main
+```bash
+mkdir devops-experiment  
+git init   
+nano student\_portal.html  
+\<h1\>student portal\</h1\>  
+git add .  
+git commit \-m “studentportal”  
+git remote add origin URL (copy the github repo url from github which already created above)
+git push origin main
+```
 
 **Task 2: Create Feature Branch** 
 
 Management wants a login page. Create a branch and working in it 
 
-- git checkout \-b feature-login  
+```bash
+git checkout \-b feature-login
+``` 
 - Add one file and commit
 
-![Git Init](screenshots/image3.png)
+![Git Init](screenshots/image2.png)
 
 **Task 3: Create Another Feature Branch** Switch to main and Create another branch also continue work on it 
-
-- git checkout main  
-- git checkout \-b feature-signup  
-- Add some content to signup.html  
-- git add .  
-- git commit \-m “added signup”
-
+```bash
+git checkout main  
+git checkout \-b feature-signup  
+```
+- Add some content to signup.html
+```bash
+git add .  
+git commit \-m “added signup”
+```
 **Task 4: Merge Feature Branch** Merge feature into main. 
-
-- git checkout main  
-- git merge feature-login  
-- git merge feature-signup
-
+```bash
+git checkout main  
+git merge feature-login  
+git merge feature-signup
+```
 
 **Task 5: Create Merge Conflict** 
 
@@ -78,7 +83,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 Try merging: 
 
 - Open signup.html and remove markers and keep only the desired line  
-![Git Init](screenshots/image4.png) ![Git Init](screenshots/image5.png) 
+![Git Init](screenshots/image10.png)
 - git add signup.html  
 - git commit \-m “added signup with email”  
 - Your branch now merged
@@ -99,13 +104,14 @@ Create hotfix branch:and work on it
 - git checkout \-b hotfix/login-bug  
 - Changed all the file   
 - git add .  
-- git commit \-m "login bug fixed:hotfix" 
+- git commit \-m "login bug fixed:hotfix"
+  ![Git Init](screenshots/image3.png) 
 
 **Task 8: Cherry Pick Commit** Management wants only the hotfix commit in main. 
 
 - git log \--oneline  
 - Copy the commit id of the hotfix commit  
-- ![Git Init](screenshots/image7.png) 
+- ![Git Init](screenshots/image4.png) 
 - git checkout main  
 - git cherry-pick \<commit-id\>  
 - Check the file. You can see only the cherrypiked commit has come in the main branch file
@@ -128,4 +134,3 @@ git log \--oneline \--graph
 ```
 ![Git Init](screenshots/image8.png)
 
-![Git Init](screenshots/image11.png)
