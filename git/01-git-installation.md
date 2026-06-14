@@ -1,4 +1,4 @@
-# Task 0: Git Installation and Setup (Windows Git Bash)
+# Git Installation and Setup (Windows Git Bash)
 
 ## Objective
 
