@@ -19,11 +19,11 @@ Screenshot:
 ![Branch](screenshots/branch-created.png)
 
 Merge:
-
+```bash
 git checkout main
 
 git merge feature-login
-
+```
 
 Screenshot:
 
