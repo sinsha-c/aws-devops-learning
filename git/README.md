@@ -1,4 +1,4 @@
-# Git Beginner DevOps Lab 🚀
+# Git Beginner DevOps Lab
 
 This section contains beginner-friendly Git practice tasks.
 
