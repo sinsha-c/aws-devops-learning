@@ -126,7 +126,10 @@ sudo systemctl status nginx
 # 6. (If UFW is active) allow HTTP traffic
 sudo ufw allow 'Nginx HTTP'
 ```
- 
+
+Screeshot:
+![Nginx running on Ubuntu](Screenshots/welcome-nginx.png)
+
 ### RHEL
  
 ```bash
