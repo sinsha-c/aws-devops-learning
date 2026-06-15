@@ -12,12 +12,12 @@ Different developers work on different features using Git branches. Your task is
 
 - Go to the terminal where the git is configured already.  
 ```bash
-git clone \<repourl\>  
-cd \<reponame\>  
-nano student\_portal.html  
-\<h1\>student portal\</h1\>  
+git clone <repourl>  
+cd <reponame>  
+nano student_portal.html  
+<h1>student portal</h1>  
 git add .  
-git commit \-m “studentportal”  
+git commit -m “studentportal”  
 git push origin main
 ```
 OR 
@@ -26,10 +26,10 @@ Go to the terminal, create a new directory and initialize Git.
 ```bash
 mkdir devops-experiment  
 git init   
-nano student\_portal.html  
-\<h1\>student portal\</h1\>  
+nano student_portal.html  
+<h1>student portal</h1>  
 git add .  
-git commit \-m “studentportal”  
+git commit -m “studentportal”  
 git remote add origin URL (copy the github repo url from github which already created above)
 git push origin main
 ```
@@ -39,7 +39,7 @@ git push origin main
 Management wants a login page. Create a branch and working in it 
 
 ```bash
-git checkout \-b feature-login
+git checkout -b feature-login
 ``` 
 - Add one file and commit
 
@@ -48,12 +48,12 @@ git checkout \-b feature-login
 **Task 3: Create Another Feature Branch** Switch to main and Create another branch also continue work on it 
 ```bash
 git checkout main  
-git checkout \-b feature-signup  
+git checkout -b feature-signup  
 ```
 - Add some content to signup.html
 ```bash
 git add .  
-git commit \-m “added signup”
+git commit -m “added signup”
 ```
 **Task 4: Merge Feature Branch** Merge feature into main. 
 ```bash
@@ -66,35 +66,43 @@ git merge feature-signup
 
 Now simulate two developers modifying the same line. 
 
-- From command line open a file (signup.html) and added one line at the end  
-  git add . , then commit  
-  git checkout feature-signup  
-- Added another line at the end of same file  
-- git add ., then commit
-  ```bash
-  git checkout main  
-  git merge feature-signup
-  ``` 
-- ❌Below message will throw as error
+From command line open a file (signup.html) and added one line at the end  
+```bash
+git add .
+git commit -m "forgot password" 
+git checkout feature-signup  
+```
+Added another line at the end of same file  
+```bash
+git add .
+git commit -m "signup with email" 
+```bash
+git checkout main  
+git merge feature-signup
+``` 
+
+❌Below message will throw as error
 ```bash
 CONFLICT (content): Merge conflict in signup.html
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 **Task 6: Resolve Merge Conflict**  
 Try merging: 
-
 - Open signup.html and remove markers and keep only the desired line  
 ![Git Init](screenshots/image10.png)
-- git add signup.html  
-- git commit -m “added signup with email”  
-- Your branch now merged
+``bash
+git add signup.html  
+git commit -m “added signup with email”  
+```
+Your branch now merged
 ```bash
   [main de80d09] Merge branch 'feature-signup'
 ```
-- To add the branch remotely  
+To add the branch remotely  
+```bash
   git push origin feature-login  
   git push origin feature-signup
-
+```
 **Task 7: Create Hotfix Branch** 
 
 Production issue found. Create hotfix branch and work on it 
