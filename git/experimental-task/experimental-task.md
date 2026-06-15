@@ -133,10 +133,8 @@ Check the file. You can see only the cherrypiked commit has come in the main bra
 
 **Task 9: Delete Merged Branches** 
 
-List branches:
-![Git Init](screenshots/image1.png) 
-List merged branches:
-``bash
+List branches and list merged branches:
+```bash
 git branch
 git branch --merged main  
 ```
@@ -144,12 +142,12 @@ Delete merged branch:
 ```bash
 git branch -d feature-login
 ```
-![Git Init](screenshots/image10.png)
+![Git Init](screenshots/image1.png)
 
 **Task 10: Verify Final Repository** 
 Display graph:  
 ```bash
-git log \--oneline \--graph
+git log --oneline --graph
 ```
 ![Git Init](screenshots/image8.png)
 
