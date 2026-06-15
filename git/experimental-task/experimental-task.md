@@ -67,65 +67,76 @@ git merge feature-signup
 Now simulate two developers modifying the same line. 
 
 - From command line open a file (signup.html) and added one line at the end  
-- git add . , then commit  
-- git checkout feature-signup  
+  git add . , then commit  
+  git checkout feature-signup  
 - Added another line at the end of same file  
-- git add ., then commit  
-- git checkout main  
-- git merge feature-signup  
-- Below message will throw as error
-
+- git add ., then commit
+  ```bash
+  git checkout main  
+  git merge feature-signup
+  ``` 
+- ❌Below message will throw as error
+```bash
 CONFLICT (content): Merge conflict in signup.html
-
 Automatic merge failed; fix conflicts and then commit the result.
-
+```
 **Task 6: Resolve Merge Conflict**  
 Try merging: 
 
 - Open signup.html and remove markers and keep only the desired line  
 ![Git Init](screenshots/image10.png)
 - git add signup.html  
-- git commit \-m “added signup with email”  
+- git commit -m “added signup with email”  
 - Your branch now merged
-
-  \[main de80d09\] Merge branch 'feature-signup'
-
+```bash
+  [main de80d09] Merge branch 'feature-signup'
+```
 - To add the branch remotely  
-- git push origin feature-login  
-- git push origin feature-signup
+  git push origin feature-login  
+  git push origin feature-signup
 
 **Task 7: Create Hotfix Branch** 
 
-Production issue found. 
-
-Create hotfix branch:and work on it 
-
-- git checkout  main  
-- git checkout \-b hotfix/login-bug  
-- Changed all the file   
-- git add .  
-- git commit \-m "login bug fixed:hotfix"
-  ![Git Init](screenshots/image3.png) 
+Production issue found. Create hotfix branch and work on it 
+```bash
+git checkout  main  
+git checkout -b hotfix/login-bug
+``` 
+Changed all the file
+```bash  
+git add .  
+git commit -m "login bug fixed:hotfix"
+```
+![Git Init](screenshots/image3.png) 
 
 **Task 8: Cherry Pick Commit** Management wants only the hotfix commit in main. 
-
-- git log \--oneline  
-- Copy the commit id of the hotfix commit  
-- ![Git Init](screenshots/image4.png) 
-- git checkout main  
-- git cherry-pick \<commit-id\>  
-- Check the file. You can see only the cherrypiked commit has come in the main branch file
+```bash  
+- git log --oneline
+``` 
+Copy the commit id of the hotfix commit  
+![Git Init](screenshots/image4.png) 
+```bash
+git checkout main  
+git cherry-pick <commit-id>  
+```
+Check the file. You can see only the cherrypiked commit has come in the main branch file
 
 ![Git Init](screenshots/image9.png)
 
 **Task 9: Delete Merged Branches** 
 
-- List branches: git branch  
-- ![Git Init](screenshots/image1.png) 
-- List merged branches:  git branch \--merged main  
-- Delete merged branch:   
--  git branch \-d feature-login  
-- ![Git Init](screenshots/image10.png)
+List branches:
+![Git Init](screenshots/image1.png) 
+List merged branches:
+``bash
+git branch
+git branch --merged main  
+```
+Delete merged branch:   
+```bash
+git branch -d feature-login
+```
+![Git Init](screenshots/image10.png)
 
 **Task 10: Verify Final Repository** 
 Display graph:  
