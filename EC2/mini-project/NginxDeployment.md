@@ -1,4 +1,4 @@
-# 🚀 Nginx Server Setup on AWS EC2 (Amazon Linux, Ubuntu & Red Hat)
+# Nginx Server Setup on AWS EC2 (Amazon Linux, Ubuntu & Red Hat)
 
 ## 📌 Project Overview
 This mini project demonstrates how to set up and configure an **Nginx web server** on different Linux-based EC2 instances using AWS:
