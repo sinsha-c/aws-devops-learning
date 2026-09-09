@@ -8,7 +8,7 @@ This guide breaks down all three, how they work, and when to use each one.
 
 ## 1. Object Storage
 
-![Object Storage](images/object-storage.png)
+<img src="images/object-storage.png" width="600">
 
 Object storage stores each piece of data as its own separate, independent unit called an **object** — nothing is broken up or spread across multiple files. Each object holds three things together: the actual file content (e.g., the contents of a photo or video), a unique identifier called a **key**, and metadata (extra descriptive details about the file, like its size or type). Objects are stored inside a flat container called a **bucket** — there are no folders or subfolders. Instead, you retrieve any object directly using its key, typically through an HTTP-based API.
 
@@ -32,7 +32,7 @@ Amazon S3, Google Cloud Storage, Azure Blob Storage, MinIO
 
 ## 2. Block Storage
 
-![Block Storage](images/block-storage.png)
+<img src="images/block-storage.png" width="600">
 
 Block storage splits data into fixed-size **blocks**, each with its own address, and presents them as a raw **volume** — much like a physical hard drive. The operating system attaches the volume, formats it with a filesystem, and manages files on top of it. Because there's no built-in awareness of "files," block storage delivers very low latency and high I/O performance.
 
@@ -56,7 +56,7 @@ Amazon EBS, Google Persistent Disk, Azure Managed Disks, SAN (Storage Area Netwo
 
 ## 3. File Storage
 
-![File Storage](images/file-storage.png)
+<img src="images/file-storage.png" width="600">
 
 File storage organizes data in a familiar **hierarchical structure** of folders, subfolders, and files — the same model used on a personal computer. Multiple clients can mount the same file share simultaneously and access files using standard paths, making it ideal for shared, collaborative access.
 
