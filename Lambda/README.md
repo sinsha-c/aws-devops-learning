@@ -405,5 +405,14 @@ The free tier includes 1 million requests and 400,000 GB-seconds of compute per 
 - Deploy your function using **Terraform** or **AWS SAM**.
 
 ---
+ 
+## Author
 
-*If you found this guide useful, give the repo a star and share your feedback.*
+**Sinsha C**
+ 
+## Connect
+
+If you're on a similar DevOps learning journey, feel free to connect or follow along:
+
+[![GitHub](https://img.shields.io/badge/GitHub-sinsha--c-181717?style=flat&logo=github&logoColor=white)](https://github.com/sinsha-c)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-sinshac-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/sinshac)
