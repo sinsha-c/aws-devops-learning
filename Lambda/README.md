@@ -4,7 +4,7 @@
 
 ![AWS](https://img.shields.io/badge/AWS-Lambda-FF9900?logo=awslambda&logoColor=white)
 ![Level](https://img.shields.io/badge/Level-Beginner-brightgreen)
-![Runtime](https://img.shields.io/badge/Runtime-Python%203.12-blue)
+![Runtime](https://img.shields.io/badge/Runtime-Python%203.14-blue)
 
 ---
 
@@ -113,7 +113,7 @@ A beginner-friendly DevOps task: build a Lambda function that **stops every EC2 
 | **Services used** | Lambda, EC2, IAM, EventBridge Scheduler, CloudWatch Logs |
 | **Time** | About 30 minutes |
 | **Cost** | Free Tier friendly (use a `t2.micro` or `t3.micro`) |
-| **Runtime** | Python 3.12 |
+| **Runtime** | Python 3.14 |
 | **Prerequisites** | An AWS account and access to the AWS Management Console |
 
 ### Architecture
