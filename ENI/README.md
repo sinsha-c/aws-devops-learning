@@ -47,6 +47,10 @@ Attach a secondary Elastic Network Interface (ENI) from a different subnet to a 
 
 <img src="screenshots/05-eip-associated.png" alt="EIP associated" width="700">
 
+**EIP associated**
+
+<img src="screenshots/5.1-eip-associated.png" alt="EIP associated" width="700">
+
 ### 6. Test accessibility
 ```bash
 # SSH using the Elastic IP
